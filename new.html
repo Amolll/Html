@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Files/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ss.css">
+
+    <script src="Files/bootstrap.min.js"></script>
+    <script src="Files/jquery.min.js"></script>
+    <script src="Files/popper.min.js"></script>
+
+    <script>
+        function validation() {
+            var UserName = document.getElementById("name1").value;
+            var Password = document.getElementById("name2").value;
+
+            if (UserName == null || UserName == "") {
+                alert("username is compslary");
+                return false;
+            }
+            if (Password == null || Password == "") {
+                alert("Password is compslary");
+                return false;
+            }
+            alert('login Succesfully');
+        }
+    </script>
+</head>
+
+<body>
+    <div class=" xyz ">
+        <div>
+            <h1>Login Form</h1>
+        </div>
+        <form class="msg">
+            <div>
+
+                <label>UserName</label>
+                <input id="name1 " type="text " required>
+
+                <br><br>
+
+                <label>Password</label>
+                <input id="name2 " type="password" required>
+
+                <br><br>
+
+                <button id="sub " onclick="validation();">Login</button>
+
+                <button value="cancel ">Cancel</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
