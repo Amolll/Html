@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Form.css">
+    <script>
+        function validateform() {
+            var Full = document.myform.name.value;
+            var Email = document.myform.Password.value;
+            var Password = document.myform.Password.value;
+
+            if (FullName == null || UserName == "") {
+                alert("UserName can't be blank");
+                return false;
+            }
+            if (Email == null || Email == "") {
+                alert("Email is required");
+                return false;
+            }
+            if (Password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+            alert("login")
+        }
+    </script>
+</head>
+
+<body class="AH">
+    <div class="abc card">
+        <form class="myform" class="form-control">
+            <h3>Account</h3>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="Full name" placeholder="Full Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Email Address" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>Date Of Birth</h3>
+                        <button>DD</button>
+                        <button>MM</button>
+                        <button>YYYY</button>
+                        <h3>Gender</h3>
+                        <button type="radio ">Male</button>
+                        <button type="button">Female </button>
+
+                    </td>
+                </tr>
+            </table>
+
+
+        </form>
+        <div>
+            <h3>Payment Details</h3>
+            <button>Credit Card</button>
+            <button>Paypal</button>
+        </div>
+        <div>
+            <br>
+            <input type="text" placeholder="Card Number">
+            <br><br>
+
+            <input type="text" placeholder="Card CVC">
+            <select>
+                
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>
